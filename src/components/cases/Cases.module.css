@@ -1,0 +1,93 @@
+.caseWrapper {
+    width: 100%;
+    height: 500px;
+    background-color: #d8ecef;
+    margin: 0 auto;
+}
+.container {
+    margin-top: 30px;
+    width: 100%;
+    padding-top: 60px;
+    font-size: 14px;
+}
+
+.caseBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*
+.container::after {
+    background-image: url('../../assets/img/footImg3.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+}
+*/
+
+.headerTable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid darkgrey;
+    font-weight: 500;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: start;
+    background-color: white;
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+}
+
+.valueTable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid darkgrey;
+    border-top: none;
+    padding: 10px;
+    text-align: start;
+    border-radius: 0 0 4px 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.item {
+    margin-left: 10px;
+    display: flex;
+}
+
+.wordCopy {
+    margin-left: 15px;
+}
+
+.wordCopy:hover {
+    color: #a94442;
+}
+
+.tooltip {
+    background-color: rgba(242, 222, 222, 0.63);
+    visibility: hidden;
+    margin-left: 8px;
+    font-size: 11px;
+    color: #a94442;
+    padding: 4px;
+    opacity: 0.6;
+}
+
+.tooltipOnHover:hover + .tooltip {
+    visibility: visible;
+}
+
+
+@media screen and (min-width: 1200px)  {
+    .caseWrapper {
+        max-width: 1320px;
+    }
+}
